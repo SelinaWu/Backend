@@ -34,6 +34,8 @@ class User:
         if(len(users) < 1):
             return ""
         return users[-1].name
+def add_score(user_name, newScore):
+        User.user_dictionary[user_name].score += newScore
 
    
 if __name__ == "__main__":
